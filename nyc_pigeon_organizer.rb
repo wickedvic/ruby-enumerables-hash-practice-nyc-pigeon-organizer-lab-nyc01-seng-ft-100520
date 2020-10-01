@@ -5,12 +5,12 @@ def nyc_pigeon_organizer(data)
     value.each do |inner_key, names|
       names.each do |name|
         
-        if !new_hash[name]
-          new_hash[name] = {}
+        if !final_array[name]
+          final_array[name] = {}
         end
 
-        if !new_hash[name][key]
-          new_hash[name][key] = []
+        if !final_array[name][key]
+          final_array[name][key] = []
         end
 
         new_hash[name][key] << new_value.to_s

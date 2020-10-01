@@ -13,10 +13,10 @@ def nyc_pigeon_organizer(data)
           final_array[name][key] = []
         end
 
-        final_array[name][key] << new_value.to_s
+        final_array[name][key] << inner_key
 
       end
     end
   end
-  new_hash
+  final_array
 end
